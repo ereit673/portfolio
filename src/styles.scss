@@ -1,16 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import './styles/utils.css';
+@import './styles/utils.scss';
+@import './styles/variables.scss';
+
 @font-face {
     font-family: 'poppins';
     src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
 }
-
-$font-primary: 'poppins', 'sans-serif';
-$clr-dark: #141D2F;
-$clr-light: #FFFFFF;
-$clr-light-blue: #00BEE8;
-$clr-dark-blue: #4B47FF;
-
 
 *,
 *::before,

@@ -9,5 +9,4 @@ import { NavbarComponent } from './navbar/navbar.component';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
-
 }
