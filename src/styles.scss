@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/utils.css';
+@font-face {
+    font-family: 'poppins';
+    src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
+}
+
+$font-primary: 'poppins', 'sans-serif';
+$clr-dark: #141D2F;
+$clr-light: #FFFFFF;
+$clr-light-blue: #00BEE8;
+$clr-dark-blue: #4B47FF;
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: $clr-dark;
+    color: $clr-light;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
