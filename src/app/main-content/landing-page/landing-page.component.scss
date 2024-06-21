@@ -1,0 +1,42 @@
+@import "./../../../styles/variables.scss";
+@import "./../../../styles/utils.scss";
+
+.hero__text-container {
+    
+    display: flex;
+    justify-content: center;
+    margin: 1.4rem 0;
+
+    .hero__description1{
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        text-align: center;
+        font-size: 2rem;
+        display: block;
+    }
+
+    .hero__horizontal-text-container{
+        .hero__title{
+            font-size: 2.8rem;
+            letter-spacing: -0.025em;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .hero__description2{
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            letter-spacing: -0.025em;
+            line-height: 1;
+            font-weight: 400;
+            color:$clr-dark-blue;
+        }
+
+    }
+}
+
+.hero__btn{
+    border: 1px solid red;
+    margin-inline: auto;
+    display: block;
+}
