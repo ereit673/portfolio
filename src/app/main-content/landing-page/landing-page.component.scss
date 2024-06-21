@@ -1,42 +1,260 @@
 @import "./../../../styles/variables.scss";
 @import "./../../../styles/utils.scss";
 
+.hero {
+  text-align: center;
+  position: relative;
+}
+
+.hero__img {
+  width: 24rem;
+  height: 24rem;
+  object-fit: contain;
+  margin-inline: auto;
+}
+
+.hero__main-container {
+  margin-top: 1rem;
+}
+
 .hero__text-container {
-    
+  text-align: start;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__description1 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+  font-size: $size-3xl;
+  display: block;
+}
+
+.hero__title {
+  font-size: $size-4xl;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero__description2 {
+  text-transform: uppercase;
+  font-size: $size-2xl;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+  font-weight: 400;
+  color: $clr-dark-blue;
+}
+
+.hero__btn {
+  margin-top: 1rem;
+}
+
+.hero__social-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.6rem;
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+.hero__social{
+  cursor: pointer;
+
+  &:hover{
+    transform: scale(1.3);
+  }
+}
+
+.hero__email{
+  display: none;
+}
+
+.hero__separator {
+  border: 2px solid $clr-dark-blue;
+  padding: 0 1.2rem;
+  height: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.hero__scroll-container {
+  @keyframes jump {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-30px);
+    }
+
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  animation: jump 2s ease infinite;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  gap: 1rem;
+  writing-mode: vertical-lr;
+  display: none;
+}
+
+.hero__scroll-arrow {
+  width: 1em;
+  height: 1em;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .hero__img {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .hero__description1 {
+    font-size: $size-4xl;
+  }
+
+  .hero__title {
+    font-size: $size-5xl;
+    line-height: 1.2;
+  }
+
+  .hero__description2 {
+    font-size: $size-3xl;
+  }
+
+  .hero__social-container {
+    margin-top: 3rem;
+  }
+
+  .hero__separator {
+    padding: 0 2rem;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .hero__container > * + * {
+    margin-top: 1rem;
+  }
+
+  .hero__img {
+    width: 33rem;
+    height: 33rem;
+  }
+
+  .hero__description1 {
+    font-size: $size-5xl;
+  }
+
+  .hero__title {
+    font-size: $size-6xl;
+    line-height: 1.2;
+  }
+
+  .hero__description2 {
+    font-size: $size-4xl;
+    line-height: 1.3;
+  }
+
+  .hero__btn {
+    font-size: $size-lg;
+  }
+
+  .hero__separator {
+    padding: 0 4rem;
+  }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .hero__main-container {
+    margin-top: 0;
+  }
+  .hero__container {
     display: flex;
-    justify-content: center;
-    margin: 1.4rem 0;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .hero__description1{
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        text-align: center;
-        font-size: 2rem;
-        display: block;
-    }
+  .hero__img {
+    margin-inline: 0;
+  }
 
-    .hero__horizontal-text-container{
-        .hero__title{
-            font-size: 2.8rem;
-            letter-spacing: -0.025em;
-            font-weight: 700;
-            line-height: 1;
-        }
+  .hero__btn {
+    margin-top: 2rem;
+  }
 
-        .hero__description2{
-            text-transform: uppercase;
-            font-size: 1.6rem;
-            letter-spacing: -0.025em;
-            line-height: 1;
-            font-weight: 400;
-            color:$clr-dark-blue;
-        }
+  .hero__social-container {
+    margin-top: 5rem;
+    justify-content: flex-start;
+    padding-left: 10rem;
+  }
 
-    }
-}
-
-.hero__btn{
-    border: 1px solid red;
-    margin-inline: auto;
+  .hero__email{
     display: block;
+  }
+
+  .hero__scroll-container {
+    display: flex;
+  }
 }
+
+/* xl */
+@media (min-width: 1280px) {
+  .hero__description1 {
+    font-size: $size-6xl;
+  }
+
+  .hero__img {
+    width: 35rem;
+    height: 45rem;
+  }
+
+  .hero__title {
+    font-size: $size-8xl;
+    line-height: 1;
+    letter-spacing: -0.025em;
+  }
+
+  .hero__description2 {
+    font-size: $size-6xl;
+    line-height: 1;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* 2xl */
+ @media (min-width: 1536px) {
+  .hero__img {
+    width: 45rem;
+    height: 50rem;
+  }
+
+  .hero__scroll-container{
+    font-size: $size-2xl;
+  }
+
+  .hero__social{
+    width: 40px;
+  }
+
+  .hero__email{
+    font-size: $size-2xl;
+  }
+ } 
