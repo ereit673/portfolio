@@ -21,7 +21,7 @@
 .container {
   width: 100%;
   margin-inline: auto;
-  padding-inline: 0.5rem;
+  padding:0 1.5rem;
 }
 
 .btn {
@@ -49,6 +49,7 @@
   font-size: $size-4xl;
   font-weight: 700;
   color: $clr-light;
+  line-height: 1;
 }
 
 /* xs */
