@@ -11,9 +11,11 @@
 
 .header__title {
   text-decoration: none;
+  text-transform: uppercase;
   color: $clr-light;
-  font-size: 2.8rem;
-  letter-spacing: -0.025em;
+  font-size: $size-3xl;
+  letter-spacing: 0.25em;
+  font-weight: 700;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -115,7 +117,15 @@
 }
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+ @media (min-width: 1024px) {
+  .header{
+    padding: 2rem 2rem;
+  }
+
+  .header__title{
+    font-size: $size-5xl;
+  }
+ } 
 
 /* xl */
 /* @media (min-width: 1280px) {} */

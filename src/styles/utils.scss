@@ -45,10 +45,19 @@
   }
 }
 
+.title {
+  font-size: $size-4xl;
+  font-weight: 700;
+  color: $clr-light;
+}
+
 /* xs */
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
+  }
+  .title {
+    font-size: $size-5xl;
   }
 }
 
@@ -56,6 +65,9 @@
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
+  }
+  .title {
+    font-size: $size-6xl;
   }
 }
 
@@ -70,6 +82,7 @@
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+    padding: 0 2rem;
   }
 }
 
@@ -77,6 +90,10 @@
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+
+  .title {
+    font-size: $size-8xl;
   }
 }
 
