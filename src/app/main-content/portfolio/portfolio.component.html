@@ -1,1 +1,39 @@
-<p>portfolio works!</p>
+<section class="portfolio container">
+  <div class="portfolio__title-container">
+    <div class="portfolio__separator-small"></div>
+    <h1 class="portfolio__title title">Portfolio</h1>
+    <div class="portfolio__separator-big"></div>
+  </div>
+
+  <p class="portfolio__description">
+    Explore a selection of my work here - Interact with projects to see my
+    skills in action.
+  </p>
+
+  <div class="portfolio__container">
+    @for (project of projectsList; track idx; let idx = $index) {
+    <div class="portfolio__box">
+      <img
+        class="portfolio__project-img"
+        src="{{ projectsList[idx].imgLink }}"
+        alt=""
+        width="601"
+        height="600"
+      />
+      <div class="portfolio__project-infos">
+        <h2 class="portfolio__project-title">{{ projectsList[idx].name }}</h2>
+        <h3 class="portfolio__project-description1">
+          {{ projectsList[idx].techUsed }}
+        </h3>
+        <p class="portfolio__project-description2">
+          {{ projectsList[idx].description }}
+        </p>
+        <div class="portfolio__buttons-container">
+          <a class="portfolio__btn1 btn" href="#">Live test</a>
+          <a class="portfolio__btn2 btn" href="">Github</a>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</section>
