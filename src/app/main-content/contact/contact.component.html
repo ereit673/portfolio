@@ -1,1 +1,161 @@
-<p>contact works!</p>
+<section class="contact container section--margin-bottom">
+  <div class="contact__title-container">
+    <div class="contact__separator"></div>
+    <h2 class="contact__title title">Contact</h2>
+  </div>
+  <div class="contact__container">
+    <div class="contact__content">
+      <h3 class="contact__description1">Got a problem to solve?</h3>
+      <p class="contact__description2">
+        Contact me through this form, I am interested in hearing from you,
+        knowing your ideas and contributing to your projects with my work.
+      </p>
+      <p class="contact__description3">
+        Need a Frontend developer? <strong>Contact me!</strong>
+      </p>
+    </div>
+    <form
+      class="contact__form"
+      (ngSubmit)="onSubmit(contactForm)"
+      #contactForm="ngForm"
+    >
+      <div class="contact__input-container">
+        <input
+          class="contact__input"
+          #name="ngModel"
+          [(ngModel)]="contactData.name"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          [ngClass]="{
+            'contact_input-border-red': name.touched && name.invalid,
+            'contact_input-border-green': name.touched && name.valid
+          }"
+          required
+        />
+        @if(!name.valid && name.touched){
+        <img
+          class="contact__warning-img"
+          width="26"
+          height="26"
+          src="assets/img/contact/redalert.png"
+          alt=""
+        />
+        } @else if (name.valid && name.touched) {
+        <img
+          class="contact__warning-img"
+          width="26"
+          height="26"
+          src="assets/img/contact/greenalert.png"
+          alt=""
+        />
+        } @if(!name.valid && name.touched){
+        <span class="contact__input-warning">Your name is required</span>
+        }
+      </div>
+
+      <div class="contact__input-container">
+        <input
+          class="contact__input"
+          #email="ngModel"
+          [(ngModel)]="contactData.email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          [ngClass]="{
+            'contact_input-border-red': email.touched && email.invalid,
+            'contact_input-border-green': email.touched && email.valid
+          }"
+          required
+        />
+        @if(!email.valid && email.touched){
+        <img
+          class="contact__warning-img"
+          width="26"
+          height="26"
+          src="assets/img/contact/redalert.png"
+          alt=""
+        />
+        } @else if (email.valid && email.touched) {
+        <img
+          class="contact__warning-img"
+          width="26"
+          height="26"
+          src="assets/img/contact/greenalert.png"
+          alt=""
+        />
+        } @if(!email.valid && email.touched){
+        <span class="contact__input-warning">Your email is required</span>
+        }
+      </div>
+      <div class="contact__input-container">
+        <textarea
+          rows="7"
+          class="contact__input"
+          #message="ngModel"
+          [(ngModel)]="contactData.message"
+          id="message"
+          name="message"
+          placeholder="Your message"
+          [ngClass]="{
+            'contact_input-border-red': message.touched && message.invalid,
+            'contact_input-border-green': message.touched && message.valid
+          }"
+          required
+        ></textarea>
+        @if(!message.valid && message.touched){
+        <img
+          class="contact__warning-img"
+          width="26"
+          height="26"
+          src="assets/img/contact/redalert.png"
+          alt=""
+        />
+        } @else if (message.valid && message.touched) {
+        <img
+          class="contact__warning-img"
+          width="26"
+          height="26"
+          src="assets/img/contact/greenalert.png"
+          alt=""
+        />
+        }@if(!message.valid && message.touched){
+        <span class="contact__input-warning">Your message is empty</span>
+        }
+      </div>
+      <label class="contact__checkbox-label" for="checkbox">
+        <input
+          class="contact__checkbox"
+          #checkbox="ngModel"
+          [(ngModel)]="contactData.checkbox"
+          type="checkbox"
+          id="checkbox"
+          name="checkbox"
+          required
+        />
+        <p class="contact__checkbox-description">
+          I've read the
+          <a href="#" class="contact__checkbox-link">privacy policy</a> and
+          agree to the processing of my data as outlined.
+        </p>
+        @if((checkbox.invalid && name.valid && email.valid && message.valid) ||
+        (checkbox.invalid && checkbox.touched)){
+        <span class="contact__input-warning"
+          >Please accept the privacy policy.</span
+        >
+        }
+      </label>
+      <input
+        class="contact__btn btn"
+        [ngClass]="{
+          'contact__btn-valid':
+            name.valid && email.valid && message.valid && checkbox.valid
+        }"
+        type="submit"
+        value="Send message :)"
+      />
+    </form>
+  </div>
+</section>
