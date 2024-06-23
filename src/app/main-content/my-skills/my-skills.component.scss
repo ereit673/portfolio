@@ -1,0 +1,150 @@
+@import "./../../../styles/variables.scss";
+@import "./../../../styles/utils.scss";
+
+.skills {
+  margin-top: 4rem;
+}
+
+.skills__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.skills__title {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.skills__separator {
+  border: 2px solid $clr-dark-blue;
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: -1.5rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.skills__description {
+  margin-bottom: 3.5rem;
+  text-align: end;
+}
+
+.skills__desktop-btn {
+  display: none;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 100px 100px 100px;
+  align-items: baseline;
+  margin-bottom: 3.5rem;
+}
+
+.skills__box-img {
+  @keyframes jump {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  margin-inline: auto;
+  height: 45px;
+
+  &:hover {
+    animation: jump 0.5s ease-in-out infinite;
+  }
+}
+
+.skills__box-title {
+  font-size: $size-sm;
+  margin-top: 0.6rem;
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+
+.skills__mobile-btn {
+  margin-inline: auto;
+  display: block;
+  text-align: center;
+  max-width: 160px;
+}
+
+/* xs */
+//  @media (min-width: 475px) {}
+
+/* sm */
+@media (min-width: 640px) {
+  .skills__description {
+    max-width: 50ch;
+  }
+
+  .skills__grid {
+    gap: 15px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .skills__grid {
+    gap: 30px;
+  }
+
+  .skills__box-img {
+    height: 60px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .skills__mobile-btn {
+    display: none;
+  }
+
+  .skills__desktop-btn {
+    display: block;
+    margin-inline: auto;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .skills__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px;
+    gap: 70px 100px;
+    margin-bottom: 0;
+  }
+
+  .skills__box-title {
+    font-size: $size-base;
+  }
+
+  .skills__content {
+    align-items: center;
+  }
+
+  .skills__separator {
+    padding: 0 1rem;
+    margin-right: -2rem;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
