@@ -1,6 +1,10 @@
 @import "./../../../styles/variables.scss";
 @import "./../../../styles/utils.scss";
 
+.skills{
+  position: relative;
+}
+
 .skills__content {
   display: flex;
   flex-direction: column;
@@ -73,8 +77,20 @@
   max-width: 160px;
 }
 
+.skills__shadow{
+  position: absolute;
+  z-index: -1;
+  left: -35px;
+  bottom: -350px;
+  height: 547px;
+}
+
 /* xs */
-//  @media (min-width: 475px) {}
+ @media (min-width: 475px) {
+  .skills__shadow{
+    left: -15px;
+  }
+ }
 
 /* sm */
 @media (min-width: 640px) {
@@ -84,6 +100,10 @@
 
   .skills__grid {
     gap: 15px;
+  }
+
+  .skills__shadow{
+    left: 0px;
   }
 }
 
@@ -136,6 +156,12 @@
   .skills__separator {
     padding: 0 1rem;
     margin-right: -2rem;
+  }
+
+  .skills__shadow{
+    height: 951px;
+    width: 428px;
+    bottom: -550px;
   }
 }
 

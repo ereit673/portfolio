@@ -9,7 +9,7 @@
   border: 1px solid #e61c40 !important;
 }
 
-.contact{
+.contact {
   position: relative;
 }
 
@@ -113,8 +113,8 @@
   cursor: pointer;
   border: 2px solid #00bee8;
   position: relative;
-  
-  &:hover{
+
+  &:hover {
     background-color: $clr-dark-blue;
   }
 
@@ -172,17 +172,36 @@
   }
 }
 
-.contact__btn-up{
+.contact__btn-up {
   position: absolute;
   bottom: -3.5rem;
   right: 1.5rem;
+}
+
+.contact__shadow-green {
+  position: absolute;
+  top: -300px;
+  right: 0;
+  z-index: -1;
+}
+
+.contact__shadow-blue {
+  position: absolute;
+  bottom: -400px;
+  left: 0;
+  z-index: -1;
 }
 
 /* xs */
 /* @media (min-width: 475px) {} */
 
 /* sm */
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+  .contact__shadow-green {
+    width: auto;
+    height: 500px;
+  }
+}
 
 /* md */
 @media (min-width: 768px) {
@@ -192,7 +211,13 @@
 }
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+  .contact__shadow-green {
+    width: auto;
+    height: 951px;
+    top: -800px;
+  }
+}
 
 /* xl */
 @media (min-width: 1280px) {
@@ -205,9 +230,15 @@
     margin-bottom: 5rem;
   }
 
-  .contact__btn-up{
+  .contact__btn-up {
     position: absolute;
     bottom: -6.5rem;
+  }
+
+  .contact__shadow-blue {
+    bottom: -450px;
+    height: 902px;
+    width: auto;
   }
 }
 

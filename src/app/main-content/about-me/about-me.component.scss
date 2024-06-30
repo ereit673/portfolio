@@ -1,6 +1,10 @@
 @import "./../../../styles/variables.scss";
 @import "./../../../styles/utils.scss";
 
+.about{
+  position: relative;
+}
+
 .about__title {
   margin-bottom: 2rem;
 }
@@ -33,6 +37,15 @@
 .about__item2-separator {
   border: 2px solid $clr-light-blue;
   padding: 0 3rem;
+}
+
+.about__shadow{
+  position: absolute;
+  z-index: -1;
+  right: 0px;
+  top: -150px;
+  width: auto;
+  height: 415px;
 }
 
 /* xs */
@@ -89,6 +102,13 @@
     display: flex;
     align-items: center;
   }
+
+  .about__shadow{
+  top: -200px;
+  height: 608px;
+
+}
+
 }
 
 /* xl */
@@ -112,4 +132,6 @@
 }
 
 /* 2xl */
-/* @media (min-width: 1536px) {} */
+ @media (min-width: 1536px) {
+  
+ } 
