@@ -1,13 +1,30 @@
 <app-navbar></app-navbar>
 <section class="hero container section--margin-bottom">
   <div class="hero__container">
-    <img
-      width="1535"
-      height="2126"
-      class="hero__img"
-      src="./../../../assets/img/landing-page/hero-photo.png"
-      alt="portrait picture of a man"
-    />
+    <div class="hero__img-container">
+      <img
+        width="1535"
+        height="2126"
+        class="hero__img"
+        src="./../../../assets/img/landing-page/hero-photo.png"
+        alt="portrait picture of a man"
+      />
+      <img
+        class="hero__bg-purple-shadow hero__bg-shadow"
+        width="330"
+        height="574"
+        src="./../../../assets/img/landing-page/purple-shadow.png"
+        alt="a purple shadow"
+      />
+      <img
+        class="hero__bg-green-shadow hero__bg-shadow"
+        width="342"
+        height="507"
+        src="./../../../assets/img/landing-page/green-shadow.png"
+        alt="a green shadow"
+      />
+    </div>
+
     <div class="hero__main-container">
       <div class="hero__text-container">
         <span class="hero__description1">I am</span>
@@ -16,27 +33,32 @@
           <h2 class="hero__description2">Frontend Developer</h2>
         </div>
       </div>
-      <a class="btn hero__btn">Let's talk!</a>
+      <a class="btn hero__btn" href="#contact">Let's talk!</a>
     </div>
   </div>
   <div class="hero__social-container">
     <div class="hero__separator"></div>
-    <img
-      src="./../../../assets/img/landing-page/github.png"
-      alt=""
-      class="hero__social"
-    />
-    <img
-      src="./../../../assets/img/landing-page/email.png"
-      alt=""
-      class="hero__social"
-    />
-    <img
-      src="./../../../assets/img/landing-page/linkedin.png"
-      alt=""
-      class="hero__social"
-    />
-    <p class="hero__email">alex.eremie19&#64;gmail.com</p>
+    <a href="https://github.com/ereit673" target="_blank"
+      ><img
+        src="./../../../assets/img/landing-page/github.png"
+        alt=""
+        class="hero__social"
+    /></a>
+    <a href="mailto:alex.eremie19@gmail.com"
+      ><img
+        src="./../../../assets/img/landing-page/email.png"
+        alt=""
+        class="hero__social"
+    /></a>
+    <a href="https://www.linkedin.com/in/alex-eremie/" target="_blank"
+      ><img
+        src="./../../../assets/img/landing-page/linkedin.png"
+        alt=""
+        class="hero__social"
+    /></a>
+    <a href="mailto:alex.eremie19@gmail.com" class="hero__email"
+      >alex.eremie19&#64;gmail.com</a
+    >
   </div>
   <div class="hero__scroll-container">
     <p>Scroll down</p>
@@ -46,4 +68,18 @@
       alt="a small arrow"
     />
   </div>
+  <img
+    class="hero__border-bottom-mobile"
+    width="1440"
+    height="879"
+    src="./../../../assets/img/landing-page/border-bottom-mobile.png"
+    alt="a border"
+  />
+  <img
+    class="hero__border-bottom-desktop"
+    width="1442"
+    height="1079"
+    src="./../../../assets/img/landing-page/border-bottom-desktop.png"
+    alt="a border"
+  />
 </section>

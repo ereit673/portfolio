@@ -9,6 +9,10 @@
   border: 1px solid #e61c40 !important;
 }
 
+.contact{
+  position: relative;
+}
+
 .contact__title-container {
   margin-bottom: 2rem;
 }
@@ -168,6 +172,12 @@
   }
 }
 
+.contact__btn-up{
+  position: absolute;
+  bottom: -3.5rem;
+  right: 1.5rem;
+}
+
 /* xs */
 /* @media (min-width: 475px) {} */
 
@@ -193,6 +203,11 @@
 
   .contact__title-container {
     margin-bottom: 5rem;
+  }
+
+  .contact__btn-up{
+    position: absolute;
+    bottom: -6.5rem;
   }
 }
 
