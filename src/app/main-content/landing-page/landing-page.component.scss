@@ -66,6 +66,10 @@
   display: block;
 }
 
+.hero__description1-de{
+  font-size: $size-lg !important;
+}
+
 .hero__title {
   line-height: 1.1;
 }
@@ -191,6 +195,10 @@
     font-size: $size-4xl;
   }
 
+  .hero__description1-de{
+    font-size: $size-2xl !important;
+  }
+
   .hero__title {
     line-height: 1.2;
   }
@@ -233,6 +241,10 @@
 
   .hero__description1 {
     font-size: $size-5xl;
+  }
+
+  .hero__description1-de{
+    font-size: $size-4xl !important;
   }
 
   .hero__title {
@@ -345,6 +357,10 @@
   .hero__title {
     line-height: 0.9;
     letter-spacing: -0.025em;
+  }
+
+.hero__description1-de{
+    font-size: $size-5xl !important;
   }
 
   .hero__description2 {

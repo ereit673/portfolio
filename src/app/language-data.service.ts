@@ -12,7 +12,6 @@ export class LanguageDataService {
 
   changeLanguageService(langCode: string) {
     this.translateService.use(langCode);
-    console.log('language set to', langCode);
     if (langCode === 'en') {
       this.english = true;
       this.german = false;

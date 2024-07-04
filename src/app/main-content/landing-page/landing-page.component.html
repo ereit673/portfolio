@@ -27,7 +27,7 @@
 
     <div class="hero__main-container">
       <div class="hero__text-container">
-        <span class="hero__description1">{{ "hero.iAm" | translate }}</span>
+        <span [ngClass]="{'hero__description1-de': languageService.german}" class="hero__description1">{{ "hero.iAm" | translate }}</span>
         <div class="hero__horizontal-text-container">
           <h1 class="hero__title title">Alex Eremie</h1>
           <h2 class="hero__description2">{{ "hero.frontend" | translate }}</h2>

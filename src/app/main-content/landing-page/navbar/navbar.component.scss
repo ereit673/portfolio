@@ -42,13 +42,32 @@
   }
 
   .header__menu {
-    display: block;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .header__lang-container{
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .header__lang-link{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 1px solid $clr-light-blue;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+
+    &:hover{
+      color: $clr-light;
+      background-color: $clr-light-blue;
+    }
   }
 
   .header__link {
     color: $clr-light;
     text-decoration: none;
-    margin-left: 1.5rem;
     font-size: 1.5rem;
     transition: all 0.3s;
     position: relative;
@@ -108,6 +127,15 @@
         }
       }
   }
+}
+
+.mobile-lang{
+  color: $clr-light-blue;
+  font-weight: 700;
+}
+
+.mobile-lang--margin{
+  margin-left: 2rem;
 }
 
 .mobile-nav-active {
