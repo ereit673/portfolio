@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "about_me": "Über mich"
+  },
+
+  "hero": {
+    "iAm": "Ich bin",
+    "frontend": "FRONTEND ENTWICKLER",
+    "button": "Lass uns reden!",
+    "scroll": "Scrolle runter"
+  },
+
+  "about": {
+    "title": "Über mich",
+    "description1": "Hallo und herzlich willkommen auf meiner Website! Ich bin ein Frontend-Entwickler aus München, Deutschland, und liebe es, komplexe Probleme zu lösen und neue Herausforderungen anzunehmen. Es freut mich sehr, dass du hier bist.",
+    "description2": "Ich liebe es, kreative und effektive Lösungen für die Gestaltung digitaler Erlebnisse zu finden. Die Vielfalt und Dynamik der Programmierung inspiriert mich jeden Tag aufs Neue.",
+    "description3": "Ich bin diszipliniert und habe ein ausgeprägtes logisches Verständnis, das es mir ermöglicht, auch die komplexesten Herausforderungen zu meistern. Schau dir gerne meine Projekte an, um einen Einblick in meine Arbeit und die von mir entwickelten Lösungen zu bekommen."
+  },
+
+  "skills": {
+    "title": "Skills",
+    "description": "Ich habe meine Frontend-Entwicklungsfähigkeiten ausgebaut, was mir ermöglicht hat, verschiedene reale Projekte zu erstellen.",
+    "button": "Kontaktiere mich"
+  },
+
+  "portfolio": {
+    "description": "Entdecke hier eine Auswahl meiner Arbeiten - Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+    "joinDescription": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+    "polloDescription": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "pokeDescription": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+  },
+
+  "contact": {
+    "description1": "Hast du ein Problem zu lösen?",
+    "description2": "Kontaktiere mich über dieses Formular. Ich bin interessiert daran, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.",
+    "description3": "Brauchst du einen Frontend-Entwickler? ",
+    "description3Bold": "Kontaktiere mich!",
+    "namePlaceholder": "Dein Name",
+    "nameError": "Dein Name wird benötigt",
+    "emailError": "Deine E-Mail Adresse wird benötigt",
+    "messageError": "Deine Nachricht ist leer",
+    "privacyError": "Bitte akzeptiere die Datenschutzrichtlinie",
+    "emailPlaceholder": "Deine E-Mail Adresse",
+    "messagePlaceholder": "Deine Nachricht",
+    "checkboxLabel1": "Ich habe die",
+    "checkboxLabel2": "Datenschutzrichtlinie",
+    "checkboxLabel3": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "sendButton": "Nachricht senden :)"
+  }
+}

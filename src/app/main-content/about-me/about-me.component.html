@@ -1,52 +1,48 @@
 <section class="about container section--margin-bottom">
-  <h2 class="about__title title">About me</h2>
-  <div class="about__container">
-    <div class="about__item1">
-      <p class="about__description1">
-        Hi, I am a Front-end deverloper based in München, Germany(....)Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor sem non
-        tempus convallis. Integer et justo vitae urna finibus eleifend sit amet
-        porttitor sapien. Donec sollicitudin massa vel lorem vestibulum
-        efficitur.
-      </p>
-      <div class="about__description2-container">
-        <img
-          src="./../../../assets/img/about/bulb.png"
-          alt="an icon of a light bulb"
-          class="about__description-icon"
-          width="50"
-          height="50"
-        />
-        <p class="about__description2-text">
-          Some personal thing to share(...) Donec ut imperdiet diam, et
-          convallis neque. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos.
+  <div>
+    <h2 class="about__title title" data-aos="fade-right">
+      {{ "about.title" | translate }}
+    </h2>
+    <div class="about__container">
+      <div class="about__item1" data-aos="fade-right">
+        <p class="about__description1">
+          {{ "about.description1" | translate }}
         </p>
+        <div class="about__description2-container">
+          <img
+            src="./../../../assets/img/about/bulb.png"
+            alt="an icon of a light bulb"
+            class="about__description-icon"
+            width="50"
+            height="50"
+          />
+          <p class="about__description2-text">
+            {{ "about.description2" | translate }}
+          </p>
+        </div>
+        <div class="about__description2-container">
+          <img
+            src="./../../../assets/img/about/puzzle.png"
+            alt="an icon of a puzzle"
+            class="about__description-icon"
+            width="50"
+            height="50"
+          />
+          <p class="about__description2-text">
+            {{ "about.description3" | translate }}
+          </p>
+        </div>
       </div>
-      <div class="about__description2-container">
+      <div class="about__item2" data-aos="fade-left">
         <img
-          src="./../../../assets/img/about/puzzle.png"
-          alt="an icon of a puzzle"
-          class="about__description-icon"
-          width="50"
-          height="50"
+          class="about__item2-img"
+          src="./../../../assets/img/about/about-photo.png"
+          alt="a portrait photo of a man"
+          width="1535"
+          height="1495"
         />
-        <p class="about__description2-text">
-          Some personal thing to share(...) Donec ut imperdiet diam, et
-          convallis neque. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos.
-        </p>
+        <div class="about__item2-separator"></div>
       </div>
-    </div>
-    <div class="about__item2">
-      <img
-        class="about__item2-img"
-        src="./../../../assets/img/about/about-photo.png"
-        alt="a portrait photo of a man"
-        width="1535"
-        height="1495"
-      />
-      <div class="about__item2-separator"></div>
     </div>
   </div>
   <img

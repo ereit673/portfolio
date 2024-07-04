@@ -20,6 +20,12 @@
   padding-left: 0.5rem;
 }
 
+.about__description-icon{
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
 .about__item2 {
   display: none;
   align-items: center;

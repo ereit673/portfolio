@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "about_me": "About me"
+  },
+
+  "hero": {
+    "iAm": "I am",
+    "frontend": "FRONTEND DEVELOPER",
+    "button": "Let's talk!",
+    "scroll": "Scroll down"
+  },
+
+  "about": {
+    "title": "About me",
+    "description1": "Hello and welcome to my website! I'm a Frontend Developer based in Munich, Germany, passionate about solving complex problems and embracing new challenges. I'm delighted that you've discovered my corner of the web.",
+    "description2": "I thrive on crafting innovative and impactful solutions for designing digital experiences. The diversity and dynamism of programming fuel my passion and inspire me daily.",
+    "description3": "I am disciplined and possess a strong logical mindset, enabling me to tackle even the most complex challenges. I invite you to explore my projects to gain insight into my work and the solutions I've developed."
+  },
+
+  "skills": {
+    "title": "My skills",
+    "description": "I have grown my frontend developments skills that have allowed me to create different real projects.",
+    "button": "Get in touch"
+  },
+
+  "portfolio": {
+    "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "joinDescription": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "polloDescription": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe find coins and salsa bottles to fight against the crazy chicken.",
+    "pokeDescription": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+  },
+
+  "contact": {
+    "description1": "Got a problem to solve?",
+    "description2": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "description3": "Need a Frontend developer? ",
+    "description3Bold": "Contact me!",
+    "namePlaceholder": "Your name",
+    "nameError": "Your name is required",
+    "emailError": "Your email is required",
+    "messageError": "Your message is empty",
+    "privacyError": "Please accept the privacy policy",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "checkboxLabel1": "I've read the",
+    "checkboxLabel2": "privacy policy",
+    "checkboxLabel3": " and agree to the processing of my data as outlined.",
+    "sendButton": "Send message :)"
+  }
+}

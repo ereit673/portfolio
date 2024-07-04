@@ -1,20 +1,22 @@
 <section class="contact container section--margin-bottom">
-  <div class="contact__title-container">
+  <div class="contact__title-container" data-aos="fade-right">
     <div class="contact__separator"></div>
     <h2 class="contact__title title">Contact</h2>
   </div>
   <div class="contact__container">
-    <div class="contact__content">
-      <h3 class="contact__description1">Got a problem to solve?</h3>
+    <div class="contact__content" data-aos="fade-right">
+      <h3 class="contact__description1">
+        {{ "contact.description1" | translate }}
+      </h3>
       <p class="contact__description2">
-        Contact me through this form, I am interested in hearing from you,
-        knowing your ideas and contributing to your projects with my work.
+        {{ "contact.description2" | translate }}
       </p>
       <p class="contact__description3">
-        Need a Frontend developer? <strong>Contact me!</strong>
+        {{ "contact.description3" | translate }} <strong>{{ "contact.description3Bold" | translate }}</strong>
       </p>
     </div>
     <form
+      data-aos="fade-left"
       class="contact__form"
       (ngSubmit)="onSubmit(contactForm)"
       #contactForm="ngForm"
@@ -27,7 +29,7 @@
           type="text"
           id="name"
           name="name"
-          placeholder="Your name"
+          placeholder="{{ 'contact.namePlaceholder' | translate }}"
           [ngClass]="{
             'contact_input-border-red': name.touched && name.invalid,
             'contact_input-border-green': name.touched && name.valid
@@ -51,7 +53,7 @@
           alt=""
         />
         } @if(!name.valid && name.touched){
-        <span class="contact__input-warning">Your name is required</span>
+        <span class="contact__input-warning">{{ 'contact.nameError' | translate }}</span>
         }
       </div>
 
@@ -63,7 +65,7 @@
           type="email"
           id="email"
           name="email"
-          placeholder="Your email"
+          placeholder="{{ 'contact.emailPlaceholder' | translate }}"
           [ngClass]="{
             'contact_input-border-red': email.touched && email.invalid,
             'contact_input-border-green': email.touched && email.valid
@@ -87,7 +89,7 @@
           alt=""
         />
         } @if(!email.valid && email.touched){
-        <span class="contact__input-warning">Your email is required</span>
+        <span class="contact__input-warning">{{ 'contact.emailError' | translate }}</span>
         }
       </div>
       <div class="contact__input-container">
@@ -98,7 +100,7 @@
           [(ngModel)]="contactData.message"
           id="message"
           name="message"
-          placeholder="Your message"
+          placeholder="{{ 'contact.messagePlaceholder' | translate }}"
           [ngClass]="{
             'contact_input-border-red': message.touched && message.invalid,
             'contact_input-border-green': message.touched && message.valid
@@ -122,7 +124,7 @@
           alt=""
         />
         }@if(!message.valid && message.touched){
-        <span class="contact__input-warning">Your message is empty</span>
+        <span class="contact__input-warning">{{ 'contact.messageError' | translate }}</span>
         }
       </div>
       <label class="contact__checkbox-label" for="checkbox">
@@ -136,14 +138,13 @@
           required
         />
         <p class="contact__checkbox-description">
-          I've read the
-          <a href="#" class="contact__checkbox-link">privacy policy</a> and
-          agree to the processing of my data as outlined.
+          {{ 'contact.checkboxLabel1' | translate }}
+          <a href="#" class="contact__checkbox-link">{{ 'contact.checkboxLabel2' | translate }}</a> {{ 'contact.checkboxLabel3' | translate }}
         </p>
         @if((checkbox.invalid && name.valid && email.valid && message.valid) ||
         (checkbox.invalid && checkbox.touched)){
         <span class="contact__input-warning"
-          >Please accept the privacy policy.</span
+          >{{ 'contact.privacyError' | translate }}</span
         >
         }
       </label>
@@ -154,7 +155,7 @@
             name.valid && email.valid && message.valid && checkbox.valid
         }"
         type="submit"
-        value="Send message :)"
+        value="{{ 'contact.sendButton' | translate }}"
       />
     </form>
   </div>
@@ -166,14 +167,14 @@
       alt="an icon of an arrow"
   /></a>
   <img
-  class="contact__shadow-green"
+    class="contact__shadow-green"
     width="158"
     height="467"
     src="./../../../assets/img/contact/green-shadow.png"
     alt="a green shadow"
   />
   <img
-  class="contact__shadow-blue"
+    class="contact__shadow-blue"
     width="158"
     height="467"
     src="./../../../assets/img/contact/blue-shadow.png"

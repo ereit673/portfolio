@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<section class="hero container section--margin-bottom">
+<section class="hero container section--margin-bottom" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out">
   <div class="hero__container">
     <div class="hero__img-container">
       <img
@@ -27,13 +27,13 @@
 
     <div class="hero__main-container">
       <div class="hero__text-container">
-        <span class="hero__description1">I am</span>
+        <span class="hero__description1">{{ "hero.iAm" | translate }}</span>
         <div class="hero__horizontal-text-container">
           <h1 class="hero__title title">Alex Eremie</h1>
-          <h2 class="hero__description2">Frontend Developer</h2>
+          <h2 class="hero__description2">{{ "hero.frontend" | translate }}</h2>
         </div>
       </div>
-      <a class="btn hero__btn" href="#contact">Let's talk!</a>
+      <a data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out" class="btn hero__btn" href="#contact">{{ "hero.button" | translate }}</a>
     </div>
   </div>
   <div class="hero__social-container">
@@ -61,7 +61,7 @@
     >
   </div>
   <div class="hero__scroll-container">
-    <p>Scroll down</p>
+    <p>{{ "hero.scroll" | translate }}</p>
     <img
       class="hero__scroll-arrow"
       src="./../../../assets/img/landing-page/white-arrow.png"

@@ -1,32 +1,37 @@
 <section class="portfolio container section--margin-bottom">
-  <div class="portfolio__title-container">
+  <div class="portfolio__title-container" data-aos="fade-left">
     <div class="portfolio__separator-small"></div>
     <h1 class="portfolio__title title">Portfolio</h1>
     <div class="portfolio__separator-big"></div>
   </div>
 
-  <p class="portfolio__description">
-    Explore a selection of my work here - Interact with projects to see my
-    skills in action.
+  <p class="portfolio__description" data-aos="fade-left">
+    {{"portfolio.description" | translate}}
   </p>
 
   <div class="portfolio__container">
-    @for (project of projectsList; track idx; let idx = $index) {
-    <div class="portfolio__box">
+    
+    <div
+      class="portfolio__box"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="400"
+      data-aos-offset="0"
+    >
       <img
         class="portfolio__project-img"
-        src="{{ projectsList[idx].imgLink }}"
+        src="assets/img/portfolio/join.png"
         alt=""
         width="601"
         height="600"
       />
       <div class="portfolio__project-infos">
-        <h2 class="portfolio__project-title">{{ projectsList[idx].name }}</h2>
+        <h2 class="portfolio__project-title">Join</h2>
         <h3 class="portfolio__project-description1">
-          {{ projectsList[idx].techUsed }}
+          Angular | TypeScript | HTML | CSS | Firebase
         </h3>
         <p class="portfolio__project-description2">
-          {{ projectsList[idx].description }}
+          {{"portfolio.joinDescription" | translate}}
         </p>
         <div class="portfolio__buttons-container">
           <a class="portfolio__btn1 btn" href="#">Live test</a>
@@ -34,7 +39,65 @@
         </div>
       </div>
     </div>
-    }
+
+    <div
+      class="portfolio__box"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="400"
+      data-aos-offset="0"
+    >
+      <img
+        class="portfolio__project-img"
+        src="assets/img/portfolio/polloloco.png"
+        alt=""
+        width="601"
+        height="600"
+      />
+      <div class="portfolio__project-infos">
+        <h2 class="portfolio__project-title">El Pollo Loco</h2>
+        <h3 class="portfolio__project-description1">
+          JavaScript | HTML | CSS
+        </h3>
+        <p class="portfolio__project-description2">
+          {{"portfolio.polloDescription" | translate}}
+        </p>
+        <div class="portfolio__buttons-container">
+          <a class="portfolio__btn1 btn" href="#">Live test</a>
+          <a class="portfolio__btn2 btn" href="">Github</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio__box"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="400"
+      data-aos-offset="0"
+    >
+      <img
+        class="portfolio__project-img"
+        src="assets/img/portfolio/pokedex.png"
+        alt=""
+        width="601"
+        height="600"
+      />
+      <div class="portfolio__project-infos">
+        <h2 class="portfolio__project-title">Pokédex</h2>
+        <h3 class="portfolio__project-description1">
+          JavaScript | HTML | CSS | Api
+        </h3>
+        <p class="portfolio__project-description2">
+          {{"portfolio.pokeDescription" | translate}}
+        </p>
+        <div class="portfolio__buttons-container">
+          <a class="portfolio__btn1 btn" href="#">Live test</a>
+          <a class="portfolio__btn2 btn" href="">Github</a>
+        </div>
+      </div>
+    </div>
+    
   </div>
   <img
     class="portfolio__shadow-blue-mobile"

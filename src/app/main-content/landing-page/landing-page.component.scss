@@ -50,6 +50,15 @@
 }
 
 .hero__description1 {
+  @keyframes fade-top {
+    0% {
+      translate: 0 -1000px;
+    }
+    100% {
+      translate: 0;
+    }
+  }
+  animation: fade-top 1s 1;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-align: center;
@@ -62,6 +71,15 @@
 }
 
 .hero__description2 {
+  @keyframes fade-left {
+    0% {
+      translate: 1000px;
+    }
+    100% {
+      translate: 0;
+    }
+  }
+  animation: fade-left 1s 1;
   text-transform: uppercase;
   font-size: $size-xl;
   letter-spacing: -0.025em;
@@ -150,7 +168,7 @@
   width: 100%;
 }
 
-.hero__border-bottom-desktop{
+.hero__border-bottom-desktop {
   display: none;
 }
 
