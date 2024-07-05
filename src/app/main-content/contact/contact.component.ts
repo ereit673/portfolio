@@ -16,8 +16,11 @@ import { LanguageDataService } from '../../language-data.service';
 export class ContactComponent {
   constructor(
     public translateService: TranslateService,
-    public languageService: LanguageDataService,
-  ){};
+    public languageService: LanguageDataService
+  ) {}
+
+  http = inject(HttpClient);
+
   contactData = {
     name: '',
     email: '',
@@ -25,9 +28,34 @@ export class ContactComponent {
     checkbox: false,
   };
 
+  mailTest = true;
+
+  post = {
+    endPoint: 'https://www.alexeremie.com/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
   onSubmit(ngForm: NgForm) {
-    if (ngForm.valid && ngForm.submitted) {
-      console.log(this.contactData);
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      ngForm.resetForm();
     }
   }
 }

@@ -71,6 +71,7 @@
             'contact_input-border-green': email.touched && email.valid
           }"
           required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
         @if(!email.valid && email.touched){
         <img
