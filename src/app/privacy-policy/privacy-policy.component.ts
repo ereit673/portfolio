@@ -5,13 +5,13 @@ import { CommonModule } from '@angular/common';
 import { LanguageDataService} from './../language-data.service';
 
 @Component({
-  selector: 'app-imprint',
+  selector: 'app-privacy-policy',
   standalone: true,
   imports: [TranslateModule, HttpClientModule, CommonModule],
-  templateUrl: './imprint.component.html',
-  styleUrl: './imprint.component.scss'
+  templateUrl: './privacy-policy.component.html',
+  styleUrl: './privacy-policy.component.scss',
 })
-export class ImprintComponent {
+export class PrivacyPolicyComponent {
   constructor(
     public translateService: TranslateService,
     public languageService: LanguageDataService

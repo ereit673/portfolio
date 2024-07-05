@@ -1,0 +1,44 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/utils.scss";
+
+.imprint {
+  text-align: center;
+  position: relative;
+  margin: 100px auto;
+  height: 100dvh;
+}
+
+.imprint > * + *{
+    margin-bottom: 1.5rem;
+}
+
+.imprint__back-arrow {
+  position: relative;
+  left: 65%;
+  margin-bottom: 2rem;
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(64%) sepia(58%) saturate(3889%) hue-rotate(150deg) brightness(98%) contrast(100%);
+  }
+}
+
+.imprint__title{
+    font-size: $size-6xl;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

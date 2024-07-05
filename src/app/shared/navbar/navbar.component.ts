@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { Component, EventEmitter, Inject, Output, inject } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { LanguageDataService } from './../../../language-data.service';
+import { LanguageDataService } from '../../language-data.service';
 
 @Component({
   selector: 'app-navbar',
