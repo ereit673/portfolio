@@ -28,10 +28,10 @@ export class ContactComponent {
     checkbox: false,
   };
 
-  mailTest = true;
+  messageSent = false;
 
   post = {
-    endPoint: 'https://www.alexeremie.com/sendMail.php',
+    endPoint: 'https://alexeremie.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -42,20 +42,23 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.messageSent = true;
+
+            setTimeout(() => {
+              this.messageSent = false;
+            }, 5000);
           },
           error: (error) => {
-            console.error(error);
+            console.error('Error submitting request: ', error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info('Request sent successfully'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
     }
   }
 }
