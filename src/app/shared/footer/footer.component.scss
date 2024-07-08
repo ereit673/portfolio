@@ -3,11 +3,13 @@
 
 .footer {
   border-top: 2px solid $clr-light-blue;
+  background-color: $clr-dark;
+}
+
+.footer__container{
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: $clr-dark;
-
 }
 
 .footer__logo {
@@ -81,7 +83,7 @@
     display: none;
   }
 
-  .footer {
+  .footer__container {
     text-align: start;
     display: flex;
     justify-content: space-between;

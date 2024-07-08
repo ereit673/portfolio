@@ -1,9 +1,15 @@
-<section class="hero container section--margin-bottom" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out">
+<section
+  class="hero container section--margin-bottom"
+  data-aos="fade-up"
+  data-aos-delay="300"
+  data-aos-duration="500"
+  data-aos-easing="ease-in-out"
+>
   <div class="hero__container">
     <div class="hero__img-container">
       <img
-        width="1535"
-        height="2126"
+        width="959"
+        height="1329"
         class="hero__img"
         src="./../../../assets/img/landing-page/hero-photo.png"
         alt="portrait picture of a man"
@@ -26,13 +32,25 @@
 
     <div class="hero__main-container">
       <div class="hero__text-container">
-        <span [ngClass]="{'hero__description1-de': languageService.german}" class="hero__description1">{{ "hero.iAm" | translate }}</span>
+        <span
+          [ngClass]="{ 'hero__description1-de': languageService.german }"
+          class="hero__description1"
+          >{{ "hero.iAm" | translate }}</span
+        >
         <div class="hero__horizontal-text-container">
           <h1 class="hero__title title">Alex Eremie</h1>
           <h2 class="hero__description2">{{ "hero.frontend" | translate }}</h2>
         </div>
       </div>
-      <a data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out" class="btn hero__btn" href="#contact">{{ "hero.button" | translate }}</a>
+      <a
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="btn hero__btn"
+        href="#contact"
+        >{{ "hero.button" | translate }}</a
+      >
     </div>
   </div>
   <div class="hero__social-container">
@@ -74,11 +92,11 @@
     src="./../../../assets/img/landing-page/border-bottom-mobile.png"
     alt="a border"
   />
-  <img
-    class="hero__border-bottom-desktop"
-    width="1442"
-    height="1079"
-    src="./../../../assets/img/landing-page/border-bottom-desktop.png"
-    alt="a border"
-  />
 </section>
+<img
+  class="hero__border-bottom-desktop"
+  width="1442"
+  height="1079"
+  src="./../../../assets/img/landing-page/border-bottom-desktop.png"
+  alt="a border"
+/>

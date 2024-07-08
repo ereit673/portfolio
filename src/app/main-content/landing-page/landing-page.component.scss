@@ -3,7 +3,6 @@
 
 .hero {
   text-align: center;
-  position: relative;
 }
 
 .hero__container {
@@ -14,6 +13,13 @@
   position: relative;
   display: flex;
   z-index: -1;
+}
+
+.hero__img {
+  height: 25rem;
+  object-fit: contain;
+  margin-inline: auto;
+  z-index: 1;
 }
 
 .hero__bg-shadow {
@@ -28,13 +34,6 @@
 .hero__bg-green-shadow {
   top: 0;
   right: 0px;
-}
-
-.hero__img {
-  height: 24rem;
-  object-fit: contain;
-  margin-inline: auto;
-  z-index: 1;
 }
 
 .hero__main-container {
@@ -66,7 +65,7 @@
   display: block;
 }
 
-.hero__description1-de{
+.hero__description1-de {
   font-size: $size-lg !important;
 }
 
@@ -148,7 +147,7 @@
 
   animation: jump 2s ease infinite;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   right: 2rem;
   align-items: center;
   gap: 1rem;
@@ -164,10 +163,9 @@
 .hero__border-bottom-mobile {
   position: absolute;
   z-index: 1;
-  bottom: 40px;
+  top: 420px;
   left: 0;
   right: 0;
-  max-width: none;
   height: 250px;
   width: 100%;
 }
@@ -195,7 +193,7 @@
     font-size: $size-4xl;
   }
 
-  .hero__description1-de{
+  .hero__description1-de {
     font-size: $size-2xl !important;
   }
 
@@ -216,8 +214,7 @@
   }
 
   .hero__border-bottom-mobile {
-    bottom: 40px;
-    height: 270px;
+    top: 500px;
   }
 }
 
@@ -243,7 +240,7 @@
     font-size: $size-5xl;
   }
 
-  .hero__description1-de{
+  .hero__description1-de {
     font-size: $size-4xl !important;
   }
 
@@ -265,8 +262,7 @@
   }
 
   .hero__border-bottom-mobile {
-    bottom: 40px;
-    height: 340px;
+    top: 550px;
   }
 }
 
@@ -283,6 +279,10 @@
 
 /* lg */
 @media (min-width: 1024px) {
+  .hero {
+    position: relative;
+  }
+
   .hero__main-container {
     margin-top: 0;
   }
@@ -335,7 +335,7 @@
     max-width: none;
     display: block;
     position: absolute;
-    bottom: -150px;
+    top: 410px;
     left: 0;
     right: 0;
     width: 100%;
@@ -359,7 +359,7 @@
     letter-spacing: -0.025em;
   }
 
-.hero__description1-de{
+  .hero__description1-de {
     font-size: $size-5xl !important;
   }
 
@@ -370,7 +370,7 @@
   }
 
   .hero__border-bottom-desktop {
-    bottom: -125px;
+    top: 600px;
   }
 }
 
@@ -401,5 +401,9 @@
 
   .hero__email {
     font-size: $size-2xl;
+  }
+
+  .hero__border-bottom-desktop {
+    top: 700px;
   }
 }

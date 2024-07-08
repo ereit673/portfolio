@@ -29,6 +29,7 @@ export class ContactComponent {
   };
 
   messageSent = false;
+  showSuccessMessage = false;
 
   post = {
     endPoint: 'https://alexeremie.com/sendMail.php',
@@ -42,6 +43,7 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+    this.showSuccessMessage = false;
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
@@ -49,6 +51,11 @@ export class ContactComponent {
           next: (response) => {
             ngForm.resetForm();
             this.messageSent = true;
+            this.showSuccessMessage = true;
+            
+            setTimeout(() => {
+              this.showSuccessMessage = false;
+            }, 3000);
 
             setTimeout(() => {
               this.messageSent = false;

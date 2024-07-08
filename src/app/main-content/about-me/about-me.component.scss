@@ -2,7 +2,7 @@
 @import "./../../../styles/utils.scss";
 
 .about{
-  position: relative;
+  overflow: hidden;
 }
 
 .about__title {
@@ -48,10 +48,11 @@
 .about__shadow{
   position: absolute;
   z-index: -1;
-  right: 0px;
-  top: -150px;
-  width: auto;
+  right: -200px;
+  top: 650px;
   height: 415px;
+  width: auto;
+  overflow: hidden;
 }
 
 /* xs */
@@ -69,6 +70,10 @@
 
   .about__description2-text {
     max-width: 40ch;
+  }
+
+  .about__shadow{
+    top: 800px;
   }
 }
 
@@ -110,10 +115,10 @@
   }
 
   .about__shadow{
-  top: -200px;
-  height: 608px;
-
-}
+    right: -400px;
+    top: 850px;
+    height: 608px;
+  }
 
 }
 
@@ -135,9 +140,18 @@
   .about__item2-separator {
     padding: 0 7rem;
   }
+
+  .about__shadow{
+    right: -200px;
+    top: 1000px;
+    height: 608px;
+  }
 }
 
 /* 2xl */
  @media (min-width: 1536px) {
-  
+  .about__shadow{
+    right: 0;
+    top: 1100px;
+  }
  } 

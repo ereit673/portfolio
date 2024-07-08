@@ -12,7 +12,8 @@
         {{ "contact.description2" | translate }}
       </p>
       <p class="contact__description3">
-        {{ "contact.description3" | translate }} <strong>{{ "contact.description3Bold" | translate }}</strong>
+        {{ "contact.description3" | translate }}
+        <strong>{{ "contact.description3Bold" | translate }}</strong>
       </p>
     </div>
     <form
@@ -53,7 +54,9 @@
           alt=""
         />
         } @if(!name.valid && name.touched){
-        <span class="contact__input-warning">{{ 'contact.nameError' | translate }}</span>
+        <span class="contact__input-warning">{{
+          "contact.nameError" | translate
+        }}</span>
         }
       </div>
 
@@ -90,7 +93,9 @@
           alt=""
         />
         } @if(!email.valid && email.touched){
-        <span class="contact__input-warning">{{ 'contact.emailError' | translate }}</span>
+        <span class="contact__input-warning">{{
+          "contact.emailError" | translate
+        }}</span>
         }
       </div>
       <div class="contact__input-container">
@@ -125,7 +130,9 @@
           alt=""
         />
         }@if(!message.valid && message.touched){
-        <span class="contact__input-warning">{{ 'contact.messageError' | translate }}</span>
+        <span class="contact__input-warning">{{
+          "contact.messageError" | translate
+        }}</span>
         }
       </div>
       <label class="contact__checkbox-label" for="checkbox">
@@ -139,14 +146,17 @@
           required
         />
         <p class="contact__checkbox-description">
-          {{ 'contact.checkboxLabel1' | translate }}
-          <a href="/privacy" class="contact__checkbox-link">{{ 'contact.checkboxLabel2' | translate }}</a> {{ 'contact.checkboxLabel3' | translate }}
+          {{ "contact.checkboxLabel1" | translate }}
+          <a href="/privacy" class="contact__checkbox-link">{{
+            "contact.checkboxLabel2" | translate
+          }}</a>
+          {{ "contact.checkboxLabel3" | translate }}
         </p>
         @if((checkbox.invalid && name.valid && email.valid && message.valid) ||
         (checkbox.invalid && checkbox.touched)){
-        <span class="contact__input-warning"
-          >{{ 'contact.privacyError' | translate }}</span
-        >
+        <span class="contact__input-warning">{{
+          "contact.privacyError" | translate
+        }}</span>
         }
       </label>
       <input
@@ -158,6 +168,19 @@
         type="submit"
         value="{{ 'contact.sendButton' | translate }}"
       />
+      @if (showSuccessMessage) {
+      <div class="contact__success-message__container">
+        <img
+          class="contact__success-img"
+          src="./../../../assets/img/contact/success.svg"
+          alt=""
+        />
+        <h3 class="contact__success-title">{{ 'contact.successMessageTitle' | translate}}</h3>
+        <p class="contact__success-message">
+          {{ 'contact.successMessage' | translate}}
+        </p>
+      </div>
+      }
     </form>
   </div>
   <a href="#landing-page" class="contact__btn-up"
@@ -167,18 +190,18 @@
       src="assets/img/contact/up-button.png"
       alt="an icon of an arrow"
   /></a>
-  <img
-    class="contact__shadow-green"
-    width="158"
-    height="467"
-    src="./../../../assets/img/contact/green-shadow.png"
-    alt="a green shadow"
-  />
-  <img
-    class="contact__shadow-blue"
-    width="158"
-    height="467"
-    src="./../../../assets/img/contact/blue-shadow.png"
-    alt="a green shadow"
-  />
 </section>
+<img
+  class="contact__shadow-green"
+  width="899"
+  height="977"
+  src="./../../../assets/img/skills/shadow.png"
+  alt="a green shadow"
+/>
+<img
+  class="contact__shadow-blue"
+  width="867"
+  height="1313"
+  src="./../../../assets/img/contact/blue-shadow.png"
+  alt="a green shadow"
+/>

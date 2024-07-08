@@ -45,7 +45,9 @@
     "checkboxLabel1": "I've read the",
     "checkboxLabel2": "privacy policy",
     "checkboxLabel3": " and agree to the processing of my data as outlined.",
-    "sendButton": "Send message :)"
+    "sendButton": "Send message :)",
+    "successMessageTitle": "Message Sent Successfully!",
+    "successMessage": "Thank you for reaching out. Your message has been sent successfully, and I will get back to you as soon as possible."
   },
 
   "privacy": {

@@ -45,7 +45,9 @@
     "checkboxLabel1": "Ich habe die",
     "checkboxLabel2": "Datenschutzrichtlinie",
     "checkboxLabel3": "gelesen und stimme der Verarbeitung meiner Daten zu.",
-    "sendButton": "Nachricht senden :)"
+    "sendButton": "Nachricht senden :)",
+    "successMessageTitle": "Nachricht erfolgreich gesendet!",
+    "successMessage": "Vielen Dank für deine Nachricht. Deine Nachricht wurde erfolgreich gesendet und ich werde mich so bald wie möglich bei dir melden."
   },
 
   "privacy": {
