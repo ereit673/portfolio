@@ -9,6 +9,7 @@
   left:0;
   right:0;
   margin-top: auto;
+  height: 380px;
 }
 
 .footer__container{
@@ -80,6 +81,9 @@
 
 /* md */
 @media (min-width: 768px) {
+  .footer{
+    height: 290px;
+  }
   .footer__desktop-link {
     display: block;
   }
