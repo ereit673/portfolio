@@ -3,6 +3,8 @@
 
 .hero {
   text-align: center;
+  height: 100dvh;
+  position: relative;
 }
 
 .hero__container {
@@ -99,7 +101,8 @@
   display: flex;
   justify-content: center;
   gap: 2.6rem;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   margin-top: 2.5rem;
 }
 

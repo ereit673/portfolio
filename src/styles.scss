@@ -29,6 +29,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {
@@ -37,6 +38,7 @@ body {
   color: $clr-light;
   overflow-x: hidden;
   position: relative;
+  min-height: 100%;
 }
 
 img,

@@ -1,19 +1,10 @@
 .privacy {
-    text-align: center;
-    position: relative;
-    margin: 100px auto;
-    max-width: 100ch;
-  }
-  
-  .privacy > * + *{
-      margin-bottom: 1.5rem;
-  }
+  text-align: center;
+  position: relative;
+  margin: 100px auto;
+  max-width: 100ch;
+}
 
-.privacy__back-arrow {
-    position: relative;
-    left: 65%;
-    margin-bottom: 2rem;
-    &:hover {
-      filter: brightness(0) saturate(100%) invert(64%) sepia(58%) saturate(3889%) hue-rotate(150deg) brightness(98%) contrast(100%);
-    }
-  }
+.privacy > * + * {
+  margin-bottom: 1.5rem;
+}
