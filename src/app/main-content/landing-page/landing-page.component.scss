@@ -3,7 +3,7 @@
 
 .hero {
   text-align: center;
-  height: 100dvh;
+  height: 100dvh !important;
   position: relative;
 }
 
@@ -150,7 +150,7 @@
 
   animation: jump 2s ease infinite;
   position: absolute;
-  bottom: 0px;
+  top: 500px;
   right: 2rem;
   align-items: center;
   gap: 1rem;
@@ -375,6 +375,10 @@
   .hero__border-bottom-desktop {
     top: 600px;
   }
+
+  .hero__scroll-container{
+    top: 700px;
+  }
 }
 
 /* 2xl */
@@ -396,6 +400,8 @@
 
   .hero__scroll-container {
     font-size: $size-2xl;
+    top: 750px;
+    min-height: 30ch;
   }
 
   .hero__social {
